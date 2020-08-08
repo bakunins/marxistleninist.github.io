@@ -1,0 +1,41 @@
+\documentclass[oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{import}
+
+\title{Documents of Communist Movements in India Vol-1}
+\author{Cull Max}
+\date{July 2020}
+
+%\makeindex
+\usepackage[pagestyles]{titlesec}
+
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
+
+
+
+
+\titleformat{}[display]{\normalfont\bfseries}{}{0pt}{\huge}
+\newpagestyle{mystyle}
+{\sethead[\thepage][][]{}{}{\thepage}}
+\pagestyle{mystyle}
+
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{The Communists’ Contribution to the Theory and Practice of Indian Politics}
+\textbf{E. M. S. Namboodiripad}\\
+\import{./Chapter-1/}{section-1}
+
+\chapter{Early Contacts of the Indian Revolutionaries with the Leaders of October Revolution}
+\import{./Chapter-2/}{section-1}
+\import{./Chapter-2/}{section-2}
+\import{./Chapter-2/}{section-3}
+
+
+\end{document}
